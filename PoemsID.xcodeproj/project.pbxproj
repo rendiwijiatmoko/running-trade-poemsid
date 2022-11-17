@@ -11,6 +11,11 @@
 		D5533078292605FF008A224C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5533077292605FF008A224C /* ContentView.swift */; };
 		D553307A29260602008A224C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D553307929260602008A224C /* Assets.xcassets */; };
 		D553307D29260602008A224C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D553307C29260602008A224C /* Preview Assets.xcassets */; };
+		D553308729260744008A224C /* RunningTradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D553308629260744008A224C /* RunningTradeView.swift */; };
+		D553308929260799008A224C /* RunningTradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D553308829260799008A224C /* RunningTradeModel.swift */; };
+		D553308B29260C6F008A224C /* RunningTradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D553308A29260C6F008A224C /* RunningTradeViewModel.swift */; };
+		D553308D29264B8B008A224C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D553308C29264B8B008A224C /* SearchBarView.swift */; };
+		F79072F129268BC000FA012A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79072F029268BC000FA012A /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D5533077292605FF008A224C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D553307929260602008A224C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D553307C29260602008A224C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D553308629260744008A224C /* RunningTradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTradeView.swift; sourceTree = "<group>"; };
+		D553308829260799008A224C /* RunningTradeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTradeModel.swift; sourceTree = "<group>"; };
+		D553308A29260C6F008A224C /* RunningTradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTradeViewModel.swift; sourceTree = "<group>"; };
+		D553308C29264B8B008A224C /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F79072F029268BC000FA012A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,12 @@
 		D5533074292605FF008A224C /* PoemsID */ = {
 			isa = PBXGroup;
 			children = (
+				D5533084292606B9008A224C /* Models */,
+				D5533083292606B4008A224C /* Views */,
+				D5533085292606BD008A224C /* ViewModels */,
 				D5533075292605FF008A224C /* PoemsIDApp.swift */,
-				D5533077292605FF008A224C /* ContentView.swift */,
 				D553307929260602008A224C /* Assets.xcassets */,
+				F79072EF29268BAA00FA012A /* DummyData */,
 				D553307B29260602008A224C /* Preview Content */,
 			);
 			path = PoemsID;
@@ -65,6 +78,40 @@
 				D553307C29260602008A224C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5533083292606B4008A224C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5533077292605FF008A224C /* ContentView.swift */,
+				D553308629260744008A224C /* RunningTradeView.swift */,
+				D553308C29264B8B008A224C /* SearchBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5533084292606B9008A224C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D553308829260799008A224C /* RunningTradeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5533085292606BD008A224C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D553308A29260C6F008A224C /* RunningTradeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F79072EF29268BAA00FA012A /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				F79072F029268BC000FA012A /* Data.swift */,
+			);
+			path = DummyData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D553308929260799008A224C /* RunningTradeModel.swift in Sources */,
 				D5533078292605FF008A224C /* ContentView.swift in Sources */,
+				D553308B29260C6F008A224C /* RunningTradeViewModel.swift in Sources */,
+				D553308729260744008A224C /* RunningTradeView.swift in Sources */,
+				D553308D29264B8B008A224C /* SearchBarView.swift in Sources */,
 				D5533076292605FF008A224C /* PoemsIDApp.swift in Sources */,
+				F79072F129268BC000FA012A /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
